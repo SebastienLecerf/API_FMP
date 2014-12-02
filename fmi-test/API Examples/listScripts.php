@@ -39,11 +39,11 @@ $fm->setProperty('password', 'symfony76');
 
 // Call listScripts() to get array of script names.
 $scripts = $fm->listScripts();
-
+var_dump($scripts);
 // If an error is found, return a message and exit.
 if (FileMaker::isError($scripts)) {
     printf("Error %s: %s\n", $scripts->getCode(), $scripts->getMessage());
-   // exit;
+   exit;
 }
 
 // Print out script names
