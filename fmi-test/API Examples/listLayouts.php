@@ -33,13 +33,22 @@ require_once ('../FileMaker.php');
 //  in filemaker-api.php.
 // If FMSA web server is on another machine, specify 'hostspec' as follows:
 //   $fm = new FileMaker('FMPHP_Sample', 'http://10.0.0.1');
-$fm = new FileMaker('FMPHP_Sample');
-//$fm->setProperty('hostspec', 'http://localhost');
-//$fm->setProperty('database', 'FMPHP_Sample');
-//$fm->setProperty('database', 'GEODIAG_Rapports');
-$fm->setProperty('username', 'Admin');
-//$fm->setProperty('username', 'Sadmin');
+require_once("../FileMaker.php");
+
+// Create a new connection to FMPHP_Sample database.
+// Location of FileMaker Server is assumed to be on the same machine,
+//  thus we assume hostspec is api default of 'http://localhost' as specified
+//  in filemaker-api.php.
+// If FMSA web server is on another machine, specify 'hostspec' as follows:
+//   $fm = new FileMaker('FMPHP_Sample', 'http://10.0.0.1');
+
+$fm = new FileMaker();
+//$fm->setProperty('hostspec', 'http://91.90.103.107');
+$fm->setProperty('hostspec', 'http://localhost');
+$fm->setProperty('database', 'GEODIAG_Rapports');
+$fm->setProperty('username', 'Sadmin');
 $fm->setProperty('password', 'symfony76');
+
 
 // Call listLayouts() to get array of layout names.
 $layouts = $fm->listLayouts();
