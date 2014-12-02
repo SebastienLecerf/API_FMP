@@ -24,16 +24,12 @@
  *
  */
  
-// Include FileMaker API
 require_once ('../FileMaker.php');
 
 // Create a new connection to server without specifying database or hostspec.
 $fm = new FileMaker();
 
-
-//Set 'hostspec' property using setProperty()
-//$fm->setProperty('hostspec', 'http://91.90.103.107');
-fm->setProperty('hostspec', 'http://localhost');
+// Set 'hostspec' property using setProperty()
 
 $databases = $fm->listDatabases();
 
