@@ -28,7 +28,8 @@
 //require_once ('../FileMaker.php');
 
 // Create a new connection to server without specifying database or hostspec.
-//$fm = new FileMaker();
+$fm = new FileMaker();
+
 echo('toto');
 // Set 'hostspec' property using setProperty()
 //$fm->setProperty('hostspec', 'http://91.90.103.107');
