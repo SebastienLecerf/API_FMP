@@ -8,7 +8,7 @@
 <body>
 <table id="main">
 <tr><th id="table-title" colspan="3">Clé</th></tr>
-<tr><th>Rue immeuble</th><th>Oh mais t'es con ou quoi</th><th>Qty Available</th></tr>
+<tr><th>Rue immeuble</th><th>Ba non</th><th>Qty Available</th></tr>
 <?php
 /**
  * displayRecords.php
