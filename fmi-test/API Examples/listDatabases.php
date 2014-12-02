@@ -25,14 +25,14 @@
  */
  
 // Include FileMaker API
-require_once ('../FileMaker.php');
+//require_once ('../FileMaker.php');
 
 // Create a new connection to server without specifying database or hostspec.
 //$fm = new FileMaker();
 echo('toto');
 // Set 'hostspec' property using setProperty()
 //$fm->setProperty('hostspec', 'http://91.90.103.107');
-fm->setProperty('hostspec', 'http://localhost');
+/*fm->setProperty('hostspec', 'http://localhost');
 
 $databases = $fm->listDatabases();
 
@@ -47,7 +47,7 @@ if (FileMaker::isError($databases)) {
 // Print out layout names
 foreach ($databases as $db) {
     echo "$db<br>";
-}
+}*/
 
 ?>
 </body>
