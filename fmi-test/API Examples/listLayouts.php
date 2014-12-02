@@ -38,7 +38,7 @@ $fm->setProperty('hostspec', 'http://localhost');
 $fm->setProperty('database', 'FMPHP_Sample');
 //$fm->setProperty('database', 'GEODIAG_Rapports');
 $fm->setProperty('username', 'Admin');
-$fm->setProperty('password', '');
+$fm->setProperty('password', 'symfony76');
 //$fm->setProperty('username', 'Sadmin');
 //$fm->setProperty('password', 'symfony76');
 
