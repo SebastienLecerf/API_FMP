@@ -43,8 +43,8 @@ require_once("../FileMaker.php");
 //   $fm = new FileMaker('FMPHP_Sample', 'http://10.0.0.1');
 
 $fm = new FileMaker();
-//$fm->setProperty('hostspec', 'http://91.90.103.107');
-$fm->setProperty('hostspec', 'http://localhost');
+$fm->setProperty('hostspec', 'http://91.90.103.107');
+//$fm->setProperty('hostspec', 'http://localhost');
 $fm->setProperty('database', 'GEODIAG_Rapports');
 $fm->setProperty('username', 'Sadmin');
 $fm->setProperty('password', 'symfony76');
