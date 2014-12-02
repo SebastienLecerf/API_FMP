@@ -47,7 +47,7 @@ if (FileMaker::isError($databases)) {
 
 // Print out layout names
 foreach ($databases as $db) {
-    echo "$db<br>";
+    echo $db."<br>";
 }
 
 ?>
