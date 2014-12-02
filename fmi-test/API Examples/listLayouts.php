@@ -25,7 +25,7 @@
  */
  
 // Include FileMaker API
-require_once ('./FileMaker.php');
+require_once ('../FileMaker.php');
 
 // Create a new connection to FMPHP_Sample database.
 // Location of FileMaker Server is assumed to be on the same machine,
