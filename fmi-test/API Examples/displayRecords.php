@@ -8,7 +8,7 @@
 <body>
 <table id="main">
 <tr><th id="table-title" colspan="3">Clé</th></tr>
-<tr><th>Rue immeuble</th><th>Ba non</th><th>Qty Available</th></tr>
+<tr><th>Id</th><th>Id Local</th><th>Id Lieu</th></tr>
 <?php
 /**
  * displayRecords.php
@@ -70,7 +70,7 @@ $row = 0;
 
 foreach ($records as $record) {
 	// if $row is odd, set class of <tr> to alt-row-color
-	if ($row % 2 == 0) {
+	/*if ($row % 2 == 0) {
 		echo "<tr class=\"alt-row-color\">";
 	} else {
 		echo "<tr>";
@@ -79,8 +79,18 @@ foreach ($records as $record) {
     	echo "<td>" . $record->getField('Fk_Id_Local') . "</td>";
     	echo "<td>" . $record->getField('Fk_Id_Lieu') . "</td>";
     	echo "</tr>";
-    	$row++;
+    	$row++;*/
+        $relatedSet = $record->getRelatedSet(’Local_Pieces’); /* Exécuté sur chacune des lignes de la table externe */ 
+        foreach ($relatedSet as $nextRow) {
+            $nameField = $nextRow->getField(’Local_Pieces::nom_piece’);
+            echo($nameField)."<br>";
+             /*if ($nameField == $badName ) {
+                 $result =   $newRow->delete();
+             }*/
+
 }
+
+
 ?>
 <tr><td colspan="3"><a href="editRecord.php">Create New Record</a></tr>
 </table>
