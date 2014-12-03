@@ -80,7 +80,8 @@ foreach ($records as $record) {
     	echo "<td>" . $record->getField('Fk_Id_Lieu') . "</td>";
     	echo "</tr>";
     	$row++;
-    /*    $relatedSet = $record->getRelatedSet(’Lieu_2’); /* Exécuté sur chacune des lignes de la table externe */ 
+
+    $relatedSet = $record->getRelatedSet(’Lieu_2’); /* Exécuté sur chacune des lignes de la table externe */ 
 
        /* foreach ($relatedSet as $nextRow) {
             $nameField = $nextRow->getField(’Lieu_2::rue_immeuble’);
