@@ -24,7 +24,7 @@
  *
  */
  
-require_once ('../FileMaker.php');
+require_once ("FileMaker.php");
 
 // Create a new connection to server without specifying database or hostspec.
 $fm = new FileMaker();
