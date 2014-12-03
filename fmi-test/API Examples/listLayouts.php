@@ -34,7 +34,7 @@ require_once ("../FileMaker.php");
 // If FMSA web server is on another machine, specify 'hostspec' as follows:
 //   $fm = new FileMaker('FMPHP_Sample', 'http://10.0.0.1');
 
-$FMbase = new \FileMaker();
+$FMbase = new FileMaker();
 		//$server = 'http://91.90.103.107';
 		//$server = 'http://localhost';
 		
