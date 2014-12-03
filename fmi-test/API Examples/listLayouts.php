@@ -34,18 +34,36 @@ require_once ("../FileMaker.php");
 // If FMSA web server is on another machine, specify 'hostspec' as follows:
 //   $fm = new FileMaker('FMPHP_Sample', 'http://10.0.0.1');
 
-$fm = new FileMaker();
+$FMbase = new \FileMaker();
+		//$server = 'http://91.90.103.107';
+		$server = 'http://localhost';
+		
+		$FMbase->setProperty('database', "GEODIAG_Rapports");
+		$FMbase->setProperty('hostspec', $server);
+		$FMbase->setProperty('username', "Sadmin");
+		$FMbase->setProperty('password', "symfony76");
+		$FMfind = $FMbase->listLayouts();
+		// $result = $FMfind->execute();
+		if ($FMbase->isError($FMfind)) {
+		    $records = "Accès non autorisé.";
+		} else {
+			$records = $FMfind;
+		}
+
+
+
+/*$fm = new FileMaker();
 //$fm->setProperty('hostspec', 'http://localhost');
 $fm->setProperty('hostspec', 'http://localhost');
 $fm->setProperty('database', 'GEODIAG_Rapports');
 $fm->setProperty('username', 'Sadmin');
-$fm->setProperty('password', 'symfony76');
+$fm->setProperty('password', 'symfony76');*/
 
 echo("test");
 // Call listLayouts() to get array of layout names.
-$layouts = $fm->listLayouts();
+/*$layouts = $fm->listLayouts();
 
-var_dump($layouts);
+var_dump($layouts);*/
 /*
 // If an error is found, return a message and exit.
 if (FileMaker::isError($layouts)) {
