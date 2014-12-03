@@ -44,6 +44,8 @@ $fm->setProperty('password', 'symfony76');
 echo("test");
 // Call listLayouts() to get array of layout names.
 $layouts = $fm->listLayouts();
+
+var_dump($layouts);
 /*
 // If an error is found, return a message and exit.
 if (FileMaker::isError($layouts)) {
