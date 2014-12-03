@@ -40,7 +40,7 @@ $FMbase = new FileMaker();
 		
 		$FMbase->setProperty('database', "GEODIAG_Rapports");
 		//$FMbase->setProperty('hostspec', $server);
-		$FMbase->setProperty('username', "Admin");
+		$FMbase->setProperty('username', "Sadmin");
 		$FMbase->setProperty('password', "symfony76");
 		$FMfind = $FMbase->listLayouts();
 		// $result = $FMfind->execute();
