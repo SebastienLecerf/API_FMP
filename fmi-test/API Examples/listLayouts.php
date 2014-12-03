@@ -25,7 +25,7 @@
  */
  
 // Include FileMaker API
-require_once ("../FileMaker.php");
+require_once ("FileMaker.php");
 
 // Create a new connection to FMPHP_Sample database.
 // Location of FileMaker Server is assumed to be on the same machine,
@@ -40,7 +40,7 @@ $FMbase = new FileMaker();
 		
 		$FMbase->setProperty('database', "GEODIAG_Rapports");
 		//$FMbase->setProperty('hostspec', $server);
-		$FMbase->setProperty('username', "Sadmin");
+		$FMbase->setProperty('username', "Admin");
 		$FMbase->setProperty('password', "symfony76");
 		$FMfind = $FMbase->listLayouts();
 		// $result = $FMfind->execute();
