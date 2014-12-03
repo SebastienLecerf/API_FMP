@@ -50,7 +50,7 @@ $FMbase = new \FileMaker();
 			$records = $FMfind;
 		}
 
-
+var_dump($records);
 
 /*$fm = new FileMaker();
 //$fm->setProperty('hostspec', 'http://localhost');
