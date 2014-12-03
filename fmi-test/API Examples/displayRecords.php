@@ -70,7 +70,7 @@ $row = 0;
 
 foreach ($records as $record) {
 	// if $row is odd, set class of <tr> to alt-row-color
-	/*if ($row % 2 == 0) {
+	if ($row % 2 == 0) {
 		echo "<tr class=\"alt-row-color\">";
 	} else {
 		echo "<tr>";
@@ -79,14 +79,13 @@ foreach ($records as $record) {
     	echo "<td>" . $record->getField('Fk_Id_Local') . "</td>";
     	echo "<td>" . $record->getField('Fk_Id_Lieu') . "</td>";
     	echo "</tr>";
-    	$row++;*/
-        $relatedSet = $record->getRelatedSet(’Lieu_2’); /* Exécuté sur chacune des lignes de la table externe */ 
-//var_dump($relatedSet);
+    	$row++;
+    /*    $relatedSet = $record->getRelatedSet(’Lieu_2’); /* Exécuté sur chacune des lignes de la table externe */ 
 
         foreach ($relatedSet as $nextRow) {
             $nameField = $nextRow->getField(’Lieu_2::rue_immeuble’);
             echo $nameField."<br>";
-        }
+        }*/
              /*if ($nameField == $badName ) {
                  $result =   $newRow->delete();
              }*/
