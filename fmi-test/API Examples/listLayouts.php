@@ -61,6 +61,7 @@ $fm->setProperty('password', 'symfony76');*/
 $layouts = $fm->listLayouts();
 
 
+
 // If an error is found, return a message and exit.
 if (FileMaker::isError($layouts)) {
     printf("Error %s: %s\n", $layouts->getCode());
