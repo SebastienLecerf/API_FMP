@@ -81,6 +81,8 @@ foreach ($records as $record) {
     	echo "</tr>";
     	$row++;*/
         $relatedSet = $record->getRelatedSet(’Lieu_2’); /* Exécuté sur chacune des lignes de la table externe */ 
+var_dump($relatedSet);
+/*
         foreach ($relatedSet as $nextRow) {
             $nameField = $nextRow->getField(’Lieu_2::rue_immeuble’);
             echo($nameField)."<br>";
@@ -88,7 +90,6 @@ foreach ($records as $record) {
              /*if ($nameField == $badName ) {
                  $result =   $newRow->delete();
              }*/
-
 }
 
 
