@@ -82,10 +82,10 @@ foreach ($records as $record) {
     	$row++;
     /*    $relatedSet = $record->getRelatedSet(’Lieu_2’); /* Exécuté sur chacune des lignes de la table externe */ 
 
-        foreach ($relatedSet as $nextRow) {
+       /* foreach ($relatedSet as $nextRow) {
             $nameField = $nextRow->getField(’Lieu_2::rue_immeuble’);
             echo $nameField."<br>";
-        }*/
+        }
              /*if ($nameField == $badName ) {
                  $result =   $newRow->delete();
              }*/
