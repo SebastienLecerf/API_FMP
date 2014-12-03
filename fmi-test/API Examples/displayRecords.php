@@ -47,7 +47,7 @@ $fm->setProperty('username', 'Sadmin');
 $fm->setProperty('password', 'symfony76');
 
 // Create FileMaker_Command_Find on layout to search
-$findCommand =& $fm->newFindAllCommand('Rapports_Local');
+$findCommand =& $fm->newFindAllCommand('Rapports_Local_Web');
 
 // Sort records in descending 'Title' order
 $findCommand->addSortRule('Fk_Id_Local', 1, FILEMAKER_SORT_ASCEND);
