@@ -75,9 +75,9 @@ foreach ($records as $record) {
 	} else {
 		echo "<tr>";
 	}
-    	echo "<td class=\"align-left\"><a href=\"viewRecord.php?recid=" . $record->getRecordId() . "\">" . $record->getField('Title') . "</td>";
-    	echo "<td>" . $record->getField('rue_immeuble') . "</td>";
-    	echo "<td>" . $record->getField('NOM_IMMEUBLE') . "</td>";
+    	echo "<td class=\"align-left\"><a href=\"viewRecord.php?recid=" . $record->getRecordId() . "\">" . $record->getField('id') . "</td>";
+    	echo "<td>" . $record->getField('Fk_Id_Local') . "</td>";
+    	echo "<td>" . $record->getField('Fk_Id_Lieu') . "</td>";
     	echo "</tr>";
     	$row++;
 }
