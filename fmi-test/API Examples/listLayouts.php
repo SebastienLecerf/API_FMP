@@ -64,7 +64,7 @@ $fm->setProperty('password', 'symfony76');*/
 // If an error is found, return a message and exit.
 
 // Print out layout names
-foreach ($FMfind as $layout) {
+foreach ($records as $layout) {
     echo $layout . "<br>";
 }
 
