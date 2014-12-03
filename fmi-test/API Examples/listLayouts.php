@@ -41,10 +41,10 @@ $fm->setProperty('database', 'GEODIAG_Rapports');
 $fm->setProperty('username', 'Sadmin');
 $fm->setProperty('password', 'symfony76');
 
-/*
+echo("test");
 // Call listLayouts() to get array of layout names.
 $layouts = $fm->listLayouts();
-
+/*
 // If an error is found, return a message and exit.
 if (FileMaker::isError($layouts)) {
     printf("Error %s: %s\n", $layouts->getCode());
