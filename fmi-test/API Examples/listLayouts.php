@@ -36,10 +36,10 @@ require_once ("../FileMaker.php");
 
 $FMbase = new \FileMaker();
 		//$server = 'http://91.90.103.107';
-		$server = 'http://localhost';
+		//$server = 'http://localhost';
 		
 		$FMbase->setProperty('database', "GEODIAG_Rapports");
-		$FMbase->setProperty('hostspec', $server);
+		//$FMbase->setProperty('hostspec', $server);
 		$FMbase->setProperty('username', "Sadmin");
 		$FMbase->setProperty('password', "symfony76");
 		$FMfind = $FMbase->listLayouts();
